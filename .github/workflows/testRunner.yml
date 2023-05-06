@@ -18,7 +18,7 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           unityVersion: 2021.3.16f1
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: Test results
